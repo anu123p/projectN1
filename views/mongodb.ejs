@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MONGODB PAGE</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>MONGO DB</h1>
+<p>Welcome to mongodb page</p>
+<div class="container">
+    <h2>Database Results</h2>
+    <table style="width:100%" border="1px solid black" >
+        <tr>
+            <th>UserId</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Contact</th>
+        </tr>
+        <% results.forEach(function(r) { %>
+            <tr> <td><%= r.userid%></td>
+                <td><%= r.firstname %></td>
+                <td><%= r.lastname %></td>
+                <td><%= r.email%></td>
+                <td><%= r.contact%></td>
+            </tr>
+                <% }); %>
+    </table>
+</div>
+</body>
+</html>
+
+
+
