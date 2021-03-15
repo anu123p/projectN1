@@ -9,7 +9,7 @@ var mongodb = require('mongodb');
 
 //module.exports = router;
 router.get('/',function(request,response){
-    mongodb.MongoClient.connect('mongodb+srv://admin:CqPZBoP2NNPCYpiy@cluster0.nkbnc.mongodb.net/',function (err,client){
+    mongodb.MongoClient.connect('mongodb+srv://<user>:<Password>@<cluster_name>/',function (err,client){
         if(err) throw err;
         var db = client.db("sample_users");
         //console.log("db connection" + db.toString());
