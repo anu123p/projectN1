@@ -7,10 +7,13 @@ var mongodb = require('mongodb');
 //     res.render('mongodb', {results:docs});
 // });
 
+
 //module.exports = router;
 router.get('/',function(request,response){
-    mongodb.MongoClient.connect('mongodb+srv://<user>:<Password>@<cluster_name>/',function (err,client){
-        if(err) throw err;
+    mongodb.MongoClient.connect('mongodb+srv://admin:CqPZBoP2NNPCYpiy@cluster0.nkbnc.mongodb.net/',function (err,client){
+        if(err) throw err;:qwgit
+        qw
+
         var db = client.db("sample_users");
         //console.log("db connection" + db.toString());
         var Routes = db.collection("details");
