@@ -12,8 +12,6 @@ var mongodb = require('mongodb');
 router.get('/',function(request,response){
     mongodb.MongoClient.connect('mongodb+srv://admin:CqPZBoP2NNPCYpiy@cluster0.nkbnc.mongodb.net/',function (err,client){
         if(err) throw err;
-        qw
-
         var db = client.db("sample_users");
         //console.log("db connection" + db.toString());
         var Routes = db.collection("details");
