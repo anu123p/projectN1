@@ -11,7 +11,7 @@ var mongodb = require('mongodb');
 //module.exports = router;
 router.get('/',function(request,response){
     mongodb.MongoClient.connect('mongodb+srv://admin:CqPZBoP2NNPCYpiy@cluster0.nkbnc.mongodb.net/',function (err,client){
-        if(err) throw err;:qwgit
+        if(err) throw err;
         qw
 
         var db = client.db("sample_users");
